@@ -93,7 +93,7 @@ class CarMain {
       System.out.println("Go take your second car for a test ride");
       System.out.println("How fast do you want to go? in KM/H");
       speedChange = speedInput.nextInt(); 
-      // Returing speed:
+      // Returning speed:
       System.out.println("Your car is travelling at " 
                          + secondCar.accelerationCalculation(speedChange) + "KM/H");
       
@@ -102,11 +102,11 @@ class CarMain {
       System.out.println("SLOW DOWN!");
       System.out.println("How much do you want to decrease your speed? in KM/H");
       speedChange = speedInput.nextInt(); 
-      // Returing speed:
+      // Returning speed:
       System.out.println("Your car is travelling at "
                          + secondCar.decelerationCalculation(speedChange) + "KM/H");
       
-    // Catches and tells the user what error occured
+    // Catches and tells the user what error occurred:
     } catch (NullPointerException e) {
       System.out.println("");
       System.out.println("ERROR: Your car isn't able to do such thing!");
