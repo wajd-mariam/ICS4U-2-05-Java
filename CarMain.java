@@ -75,18 +75,20 @@ class CarMain {
       // Changing cars information:
       // Changing car#1 licence plate number:
       System.out.println("");
-      System.out.println("Your license plate on your first car is outdated. You need a new plate"
+      System.out.println("Your license plate on your first car is outdated. You need a new plate."
                        + " Please enter a valid license plate number:");
       licensePlateCar1Change = licenseInput.nextLine();
-      System.out.println("Your new license plate number: " + licensePlateCar1Change);
+      firstCar.licensePlateSetter(licensePlateCar1Change);
+      System.out.println("Your new license plate number: " + firstCar.licensePlateGetter());
       // firstCar.licensePlateGetter()
       // Changing car#1 color:
       System.out.println("");
-      System.out.println("Your first car's body is rusty. You need a new pain job."
+      System.out.println("Your first car's body is rusty. You need a new paint job."
                        + " Please enter a color to paint your car:");
       colorCar1Change = colorInput.nextLine();
-      System.out.println("Your new car color: " + colorCar1Change);
-      // firstCar.colorGetter()
+      firstCar.colorSetter(colorCar1Change);
+      System.out.println("Your new car color: " + firstCar.colorGetter());
+      
       // Changing car speeds:
       // Acceleration
       System.out.println("");
@@ -97,14 +99,14 @@ class CarMain {
       System.out.println("Your car is travelling at " 
                          + secondCar.accelerationCalculation(speedChange) + "KM/H");
       
-      // Acceleration
+      // Acceleration:
       System.out.println("There are traffic up head!");
       System.out.println("SLOW DOWN!");
       System.out.println("How much do you want to decrease your speed? in KM/H");
       speedChange = speedInput.nextInt(); 
       // Returning speed:
       System.out.println("Your car is travelling at "
-                         + secondCar.decelerationCalculation(speedChange) + "KM/H");
+                         + secondCar.decreaseCalculation(speedChange) + "KM/H");
       
     // Catches and tells the user what error occurred:
     } catch (NullPointerException e) {

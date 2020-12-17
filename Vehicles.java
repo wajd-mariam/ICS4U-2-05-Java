@@ -31,14 +31,14 @@ public class Vehicles {
   }
   
   /**
-   * Setter for licene plate combonation.
+   * Setter for license plate combination.
    */
   public void licensePlateSetter(String inputLicensePlate) {
     licensePlate = inputLicensePlate;
   }
   
   /**
-   * Getters for licene plate combonation.
+   * Getters for license plate combination.
    */
   public String licensePlateGetter() {
     return licensePlate;

@@ -8,10 +8,7 @@
 * @since   2020/12/15
 */
 
-
-
-
-// declaring airplane class
+// Airplane class
 public class Airplane {
   // fields
   int speed;
